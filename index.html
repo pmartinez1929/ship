@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.3.0/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-3.3.0/jasmine.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script src="lib/jasmine-3.3.0/jasmine.js"></script>
+  <script src="lib/jasmine-3.3.0/jasmine-html.js"></script>
+  <script src="lib/jasmine-3.3.0/boot.js"></script>
+
+
+
+  <script src="spec/ShipSpec.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div style="width:300px">
+        <div class="col-12">
+          <img src="images/ship.svg" alt="" style="width:100%">
+          <div class="col-12">
+            <input type="number" placeholder="Porcentaje de velocidad requerida" class="form-control velocity">
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-4">
+            <label>Motor 1</label>
+            <input type="number" min='0' max='100' placeholder="Daño" class="form-control damageEngine1">
+          </div>
+          <div class="col-4">
+            <label>Motor 2</label>
+            <input type="number" min='0' max='100' placeholder="Daño" class="form-control damageEngine2">
+          </div>
+          <div class="col-4">
+            <label id='test'>Motor 3</label>
+            <input type="number" min='0' max='100' placeholder="Daño" class="form-control damageEngine3">
+          </div>
+        </div>
+        <hr/>
+        <div class="row" id="result">
+
+        </div>
+        <hr/>
+        <div class="row justify-content-center" style="margin-bottom:30px;">
+          <button type="button" class="btn btn-info" id="btn-ship">Calcular</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/Ship.js"></script>
+</body>
+</html>
